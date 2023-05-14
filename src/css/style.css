@@ -1,0 +1,214 @@
+/* Comentários são feitos no estilo C/C++ */
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #d5e7caad;
+    color: #333333;
+    /* Cor do texto */
+}
+
+body.dark-mode {
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header {
+    background-color: rgb(236, 73, 73);
+    align-items: center;
+    border-bottom: 10px solid yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+/* O espaço diz que queremos estilizar a classe logo DENTRO de header*/
+header .logo,
+header .imagem-botao {
+    width: 50px;
+    transition: 0.2 ease-in-out;
+}
+
+header .titulo {
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.884)
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    /* wrap = multilinhas */
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-pokemon {
+    background-color: #d8e3ec;
+    width: 250px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover {
+    background-color: #96d9d6;
+    transform: scale(1.05);
+}
+
+.dark-mode .cartao-pokemon {
+    background-color: #a8a8a8;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+    /* background-color: white; */
+    padding: 0px 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+main .cartao-pokemon .gif {
+    width: 180px;
+    height: 180px;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.grama {
+    background-color: #78C850;
+}
+
+.veneno {
+    background-color: #A040A0;
+}
+
+.fogo {
+    background-color: #F08030;
+}
+
+.agua {
+    background-color: #6890F0;
+}
+
+.inseto {
+    background-color: #A8B820;
+}
+
+/* Aqui é a parte gerada pelo GPT */
+
+.normal {
+    background-color: #A8A878;
+}
+
+.fire {
+    background-color: #F08030;
+}
+
+.water {
+    background-color: #6890F0;
+}
+
+.electric {
+    background-color: #F8D030;
+}
+
+.grass {
+    background-color: #78C850;
+}
+
+.ice {
+    background-color: #98D8D8;
+}
+
+.fighting {
+    background-color: #C03028;
+}
+
+.poison {
+    background-color: #A040A0;
+}
+
+.ground {
+    background-color: #E0C068;
+}
+
+.flying {
+    background-color: #A890F0;
+}
+
+.psychic {
+    background-color: #F85888;
+}
+
+.bug {
+    background-color: #A8B820;
+}
+
+.rock {
+    background-color: #B8A038;
+}
+
+.ghost {
+    background-color: #705898;
+}
+
+.dragon {
+    background-color: #7038F8;
+}
+
+.dark {
+    background-color: #705848;
+}
+
+.steel {
+    background-color: #B8B8D0;
+}
+
+.fairy {
+    background-color: #EE99AC;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
